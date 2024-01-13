@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    map<string,int>mpp;
+    mpp["raj"]=23;
+    mpp["ankesh"]=32;
+    mpp["mavesh"]=30;
+    mpp["kesvesh"]=29;
+    mpp["sneha"]=31;
+    mpp["kiran"]=33;
+    mpp["manisha"]=25;
+    
+    for(auto it=mpp.begin(); it!=mpp.end(); it++){
+        cout << it->first << ": " << it->second << " ";
+    }
+	return 0;
+}
