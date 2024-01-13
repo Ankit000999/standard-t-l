@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    stack<int>st;
+    st.push(10);
+   
+    st.emplace(9);
+     st.push(11);
+   
+    st.emplace(29);
+     st.push(50);
+    
+    st.emplace(99);
+     st.push(70);
+    
+    st.emplace(909);
+cout<<st.top()<<endl;
+
+
+	return 0;
+}
