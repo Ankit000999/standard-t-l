@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+multiset <int> ms;
+ 
+   ms.insert(91);
+   ms.insert(99);
+   ms.insert(98);
+   ms.insert(34);
+   ms.insert(13);
+   ms.insert(8);
+   ms.insert(12);
+
+for(auto it=ms.begin(); it!=ms.end(); it++ ){
+    cout<<*it<<" ";
+}
+
+	return 0;
+}
