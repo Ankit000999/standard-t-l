@@ -1,0 +1,25 @@
+//find me the last occurance of x
+//arr[]-->{1 ,5, 7, 7,8,10,10,10,11,11,12}
+ // index  0  1  2  3  4  5  6  7  8  9  10  11  
+//last occurence of x=10, Ans=7th index.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+     array<int,11>arr= {1, 5, 7, 7, 8, 10, 10, 10, 11, 11, 12};
+   int x;
+   cin>>x;
+   
+    int index = upper_bound(arr.begin(), arr.end(), x) - arr.begin();
+    index-=1;
+    if(index>=0 && arr[index]==x)
+    {
+        cout<<"last occurance:"<<index;
+        
+    }
+else {
+    cout<< "Does not exists";
+}
+    return 0;
+}
